@@ -123,22 +123,15 @@ var people = [
 ];
 
 export default function App() {
+  return <Person person={people} />;
+}
+function Person(props) {
+  console.log(Object.keys(props.person[0]));
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <h1>{props.person[0].name}</h1>
+      <p>{props.person[0].school}</p>
+      <p>{props.person[0].school}</p>
     </div>
   );
-}
-function Person() {
-  var s = {
-    name: "Bob the Builder",
-    school: "School of Hard Hats",
-    year: "2001",
-    color: "Yellow",
-    music: "Nursery Rhymes",
-    url: "https://www.youtube.com/watch?v=kXj_1u7YlUY",
-    socialMedia: "TikTok",
-    beachOrMountain: "Mountains"
-  };
 }
