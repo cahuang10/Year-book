@@ -1,4 +1,55 @@
+body {
+ /* background-image: url("https://eskipaper.com/images/dark-background-4.jpg");
+*/
+background-color: #FDFFFC;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+.no {
+  margin-top: 20px;
+}
+h4 {
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  border-color: #011627;
+  border-style: ridge;
+  border-width: 6px;
+  margin-top: -20px;
+  background-color: #d4cecd;
+}
+h2 {
+  -webkit-text-stroke: 1.2px #171717;
+  text-align: center;
+  b
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.video {
+  border: 2px solid #FF9F1C;
+  display: inline;
+  padding-top: 2px;
+  background-color: black;
+}
+.name {
+  
+}
+.body {
+  margin-right: 25px;
+  margin-left: 2px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

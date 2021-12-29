@@ -1,4 +1,5 @@
 import "./styles.css";
+import Person from "./Person";
 var people = [
   {
     name: "Bob the Builder",
@@ -123,15 +124,9 @@ var people = [
 ];
 
 export default function App() {
-  return <Person person={people} />;
-}
-function Person(props) {
-  console.log(Object.keys(props.person[0]));
-  return (
-    <div>
-      <h1>{props.person[0].name}</h1>
-      <p>{props.person[0].school}</p>
-      <p>{props.person[0].school}</p>
-    </div>
-  );
+  let listOfPeople = [];
+  for (let i = 0; i < people.length; i++) {
+    listOfPeople.push(<Person info={people[i]} />);
+  }
+  return <div className="container">{listOfPeople}</div>;
 }
